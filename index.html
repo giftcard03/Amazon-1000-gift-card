@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon $1000 Gift Card</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #84fab0, #8fd3f4);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: #333;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 400px;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            position: relative;
+        }
+
+        .menu-btn {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            cursor: pointer;
+        }
+
+        .menu-btn div {
+            width: 25px;
+            height: 3px;
+            background-color: #333;
+            margin: 5px 0;
+        }
+
+        .hero-img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            color: #27ae60;
+            font-size: 1.5rem;
+            margin: 10px 0;
+        }
+
+        p {
+            margin: 10px 0;
+            font-size: 0.9rem;
+            color: #555;
+        }
+
+        .claim-btn {
+            display: inline-block;
+            background-color: #27ae60;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 50px;
+            font-size: 1rem;
+            font-weight: bold;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .claim-btn:hover {
+            background-color: #1e8449;
+            transform: scale(1.1);
+        }
+
+        .countdown {
+            margin-top: 15px;
+            font-weight: bold;
+            color: #e74c3c;
+            font-size: 1rem;
+        }
+
+        .social-proof {
+            margin-top: 10px;
+            font-size: 0.9rem;
+            color: #333;
+        }
+
+        .reviews {
+            text-align: left;
+            margin: 15px 0;
+            font-size: 0.85rem;
+            color: #666;
+        }
+
+        .popup {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #27ae60;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 50px;
+            animation: bounce 2s infinite;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                width: 95%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="menu-btn">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <img src="https://i.ibb.co/HXBVDfP/aecbb58bfded.png" alt="Amazon Gift Card" class="hero-img">
+        <h1>Claim Your $1000 Amazon Gift Card!</h1>
+        <p>Don't miss this limited-time opportunity. Secure your gift card now!</p>
+        <a href="https://go4affm.com/c/?p=41639&o=20854&s1=anoli" class="claim-btn">Claim Now</a>
+        <p class="countdown">Offer expires in: <span id="countdown-timer">10:00</span></p>
+        <p class="social-proof">4,578 people have already claimed this offer!</p>
+        <div class="reviews">
+            <p><strong>Emily R.</strong>: "This is amazing! I can't believe I got this gift card."</p>
+            <p><strong>John D.</strong>: "Easy to claim and absolutely worth it. Thank you!"</p>
+        </div>
+    </div>
+    <div class="popup">4578 people have already claimed this offer!</div>
+    <script>
+        // Countdown Timer
+        let timer = 600;
+        const countdownElement = document.getElementById('countdown-timer');
+
+        setInterval(() => {
+            if (timer > 0) {
+                timer--;
+                const minutes = Math.floor(timer / 60);
+                const seconds = timer % 60;
+                countdownElement.textContent = `${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
+            }
+        }, 1000);
+    </script>
+</body>
+</html>
